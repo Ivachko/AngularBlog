@@ -1,0 +1,13 @@
+<a href="#" 
+[ngClass]="{'list-group-item list-group-item-action flex-column align-items-start': true,
+                'list-group-item-success': like > '0',
+                'list-group-item-danger': like < '0'}">
+  <div class="d-flex w-100 justify-content-between">
+    <h5 class="mb-1">{{ title }}</h5>
+    <small>{{ created_at | date : 'short' | uppercase }}</small>
+  </div>
+  <p class="mb-1">{{ content }}</p>
+  <div class="row">
+  <button class="btn btn-success" (click)="onLike()">Like</button><button class="btn btn-danger" (click)="onDislike()">Dont like</button>
+  </div>
+</a>

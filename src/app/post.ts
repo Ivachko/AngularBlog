@@ -10,15 +10,5 @@ export class Post {
       this.loveIts = 0;
 
   }
-  getLove(){
-      return this.loveIts;
-  }
-  addLove(){
-     
-      return this.loveIts += 1;
-  }
-  removeLove(){
-      
-      return this.loveIts-= 1;
-  }
+  
 }
